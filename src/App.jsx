@@ -16,7 +16,7 @@ const App = () => {
 
   //conditional rendering based on login state
   if(!isLoggedIn){
-    return <LoginScreen />
+    return <LoginScreen onLogin={handleLogin}/>
   }
 
   return <div className="min-h-screen bg-zinc-50">
