@@ -2,7 +2,7 @@ import Sidebar from "./Sidebar"
 import MainContent from "./MainContent"
 import RightPanel from "./RightPanel"
 import { useState } from "react"
-import AccountsExample from "./UI/AccountsExample"
+import AccountsExample from "./AccountsExample"
 
 const DashboardLayout = ({onLogout}) => {
     const [activeTab, setactiveTab] = useState("Dashboard")
