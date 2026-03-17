@@ -2,6 +2,7 @@ import Sidebar from "./Sidebar"
 import MainContent from "./MainContent"
 import RightPanel from "./RightPanel"
 import { useState } from "react"
+import AccountsExample from "./UI/AccountsExample"
 
 const DashboardLayout = ({onLogout}) => {
     const [activeTab, setactiveTab] = useState("Dashboard")
@@ -19,6 +20,7 @@ const DashboardLayout = ({onLogout}) => {
       {/* main content (Dynamic Area)*/}
     <div className="flex-1 p-2 container md:p-6 lg:p-10 max-w-5xl md:mx-auto">
       {activeTab === 'Dashboard' && <MainContent />}
+      {activeTab === 'Accounts' && <AccountsExample />}
       {/* Other tabs add here */}
     </div>
 
