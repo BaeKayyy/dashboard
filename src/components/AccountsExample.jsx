@@ -237,11 +237,11 @@ const AccountsExample = () => {
             </button>
           </div>
 
-          <div className="mb-4 hidden grid-cols-[minmax(0,1.5fr)_130px_150px_110px_36px] gap-4 px-2 text-sm font-semibold uppercase tracking-[0.18em] text-zinc-400 md:grid">
-            <p>Account</p>
-            <p>Balance</p>
-            <p>Number</p>
-            <p>Status</p>
+          <div className="mb-4 hidden grid-cols-[minmax(0,2.2fr)_minmax(0,1fr)_minmax(0,1fr)_minmax(110px,0.9fr)_40px] gap-4 px-2 text-sm font-semibold uppercase tracking-[0.18em] text-zinc-400 xl:grid">
+            <p className="truncate">Account</p>
+            <p className="truncate">Balance</p>
+            <p className="truncate">Number</p>
+            <p className="truncate">Status</p>
             <span />
           </div>
 
