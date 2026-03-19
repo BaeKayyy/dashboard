@@ -3,6 +3,11 @@ import MainContent from "./MainContent"
 import RightPanel from "./RightPanel"
 import { useState } from "react"
 import AccountsExample from "./AccountsExample"
+import TransactionsPage from "./TransactionsPage"
+import InvestmentsPage from "./InvestmentsPage"
+import NotificationsPage from "./NotificationsPage"
+import SettingsPage from "./SettingsPage"
+import HelpSupportPage from "./HelpSupportPage"
 
 const DashboardLayout = ({onLogout}) => {
     const [activeTab, setactiveTab] = useState("Dashboard")
@@ -21,7 +26,11 @@ const DashboardLayout = ({onLogout}) => {
     <div className="flex-1 p-2 container md:p-6 lg:p-10 max-w-5xl md:mx-auto">
       {activeTab === 'Dashboard' && <MainContent />}
       {activeTab === 'Accounts' && <AccountsExample />}
-      {/* Other tabs add here */}
+      {activeTab === 'Transactions' && <TransactionsPage />}
+      {activeTab === 'Investments' && <InvestmentsPage />}
+      {activeTab === 'Notifications' && <NotificationsPage />}
+      {activeTab === 'Settings' && <SettingsPage />}
+      {activeTab === 'Help & Support' && <HelpSupportPage />}
     </div>
 
       {/* right panel */}
